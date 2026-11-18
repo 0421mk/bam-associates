@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>(주)비에이엠어소시에이츠 | BAM Associates</title>
+<meta name="description" content="(주)비에이엠어소시에이츠 — 디지털 제품과 모바일 애플리케이션을 만드는 회사입니다. BAM Associates builds digital products and mobile applications.">
+<meta property="og:title" content="(주)비에이엠어소시에이츠 | BAM Associates">
+<meta property="og:description" content="디지털 제품과 모바일 애플리케이션을 만드는 회사. We build digital products and mobile applications.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff; --fg:#14161a; --muted:#5b616e; --line:#e6e8ec;
+    --panel:#f6f7f9; --accent:#14161a; --accent-fg:#ffffff;
+    --maxw:960px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0e0f12; --fg:#ececf0; --muted:#9aa0ab; --line:#23262c;
+      --panel:#16181d; --accent:#ececf0; --accent-fg:#0e0f12;
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:"Inter","Noto Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;
+    line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px}
+  a{color:inherit}
+
+  /* Header */
+  header{
+    position:sticky; top:0; z-index:10; backdrop-filter:saturate(180%) blur(8px);
+    background:color-mix(in srgb, var(--bg) 86%, transparent);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; height:64px}
+  .brand{font-weight:700; letter-spacing:-.01em; font-size:17px; text-decoration:none}
+  .brand span{color:var(--muted); font-weight:500}
+  .lang{
+    border:1px solid var(--line); background:transparent; color:var(--fg);
+    border-radius:999px; padding:6px 14px; font-size:13px; font-weight:600;
+    cursor:pointer; font-family:inherit;
+  }
+  .lang:hover{background:var(--panel)}
+
+  /* Hero */
+  .hero{padding:96px 0 72px; border-bottom:1px solid var(--line)}
+  .eyebrow{color:var(--muted); font-size:13px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; margin:0 0 18px}
+  h1{font-size:clamp(32px,5.4vw,52px); line-height:1.15; letter-spacing:-.02em; margin:0 0 20px; font-weight:700}
+  .lede{font-size:clamp(16px,2.2vw,19px); color:var(--muted); max-width:620px; margin:0}
+
+  /* Sections */
+  section{padding:64px 0; border-bottom:1px solid var(--line)}
+  .kicker{font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:0 0 14px}
+  h2{font-size:clamp(22px,3vw,28px); letter-spacing:-.01em; margin:0 0 18px; font-weight:700}
+  p.body{font-size:16px; color:var(--fg); max-width:680px; margin:0 0 14px}
+  p.body.muted{color:var(--muted)}
+
+  /* Info table */
+  .info{width:100%; border-collapse:collapse; margin-top:8px; max-width:680px}
+  .info th,.info td{text-align:left; padding:14px 0; border-bottom:1px solid var(--line); vertical-align:top; font-size:15px}
+  .info th{width:38%; color:var(--muted); font-weight:500; white-space:nowrap; padding-right:16px}
+  .info td{font-weight:500}
+  .ph{color:#b08900; background:color-mix(in srgb,#ffd84d 22%,transparent); padding:1px 6px; border-radius:5px; font-size:13px}
+
+  /* Contact */
+  .contact-mail{
+    display:inline-block; margin-top:6px; font-size:18px; font-weight:600;
+    text-decoration:none; border-bottom:2px solid var(--line); padding-bottom:3px;
+  }
+  .contact-mail:hover{border-color:var(--fg)}
+
+  footer{padding:40px 0 56px; color:var(--muted); font-size:13px}
+  .foot-row{display:flex; flex-wrap:wrap; gap:8px 18px; justify-content:space-between; align-items:center}
+
+  [lang-en]{display:none}
+  html[data-lang="en"] [lang-ko]{display:none}
+  html[data-lang="en"] [lang-en]{display:revert}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span lang-ko>(주)비에이엠어소시에이츠</span>
+      <span lang-en>BAM Associates</span>
+    </a>
+    <button class="lang" id="langBtn" type="button" aria-label="Switch language">EN</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">
+        <span lang-ko>디지털 제품 · 모바일 애플리케이션</span>
+        <span lang-en>Digital Products · Mobile Applications</span>
+      </p>
+      <h1>
+        <span lang-ko>좋은 제품을<br>꾸준히 만듭니다.</span>
+        <span lang-en>We build good<br>digital products.</span>
+      </h1>
+      <p class="lede">
+        <span lang-ko>(주)비에이엠어소시에이츠는 모바일 애플리케이션과 디지털 서비스를 기획하고 개발하는 회사입니다. 작지만 오래가는 제품을 지향합니다.</span>
+        <span lang-en>BAM Associates is a company that plans and develops mobile applications and digital services. We aim for products that are small but built to last.</span>
+      </p>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <p class="kicker">About</p>
+      <h2><span lang-ko>회사 소개</span><span lang-en>About us</span></h2>
+      <p class="body">
+        <span lang-ko>우리는 일상에 보탬이 되는 디지털 제품을 만듭니다. 모바일 앱, 웹 서비스, 브랜드 경험까지 — 기획부터 개발과 운영을 직접 합니다. 유행을 좇기보다 사용자가 오래 곁에 둘 수 있는 제품을 꾸준히 다듬는 것을 원칙으로 삼습니다.</span>
+        <span lang-en>We create digital products that help in everyday life — mobile apps, web services, and brand experiences — handling everything from planning to development and operation in-house. Rather than chasing trends, we focus on refining products that users can keep close for a long time.</span>
+      </p>
+    </div>
+  </section>
+
+  <section id="company">
+    <div class="wrap">
+      <p class="kicker">Company</p>
+      <h2><span lang-ko>회사 정보</span><span lang-en>Company information</span></h2>
+      <table class="info">
+        <tr>
+          <th><span lang-ko>상호</span><span lang-en>Company</span></th>
+          <td><span lang-ko>주식회사 비에이엠어소시에이츠</span><span lang-en>BAM Associates Co., Ltd.</span></td>
+        </tr>
+        <tr>
+          <th><span lang-ko>대표자</span><span lang-en>Representative</span></th>
+          <td><span lang-ko>정은정</span><span lang-en>Jeong Eun-jeong</span></td>
+        </tr>
+        <tr>
+          <th><span lang-ko>사업자등록번호</span><span lang-en>Business reg. no.</span></th>
+          <td>148-81-02672</td>
+        </tr>
+        <tr>
+          <th><span lang-ko>주소</span><span lang-en>Address</span></th>
+          <td><span lang-ko>대전광역시 동구 세천로 5-7</span><span lang-en>5-7 Secheon-ro, Dong-gu, Daejeon, Republic of Korea</span></td>
+        </tr>
+        <tr>
+          <th><span lang-ko>이메일</span><span lang-en>Email</span></th>
+          <td><a href="mailto:0421mk@gmail.com">0421mk@gmail.com</a></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <p class="kicker">Contact</p>
+      <h2><span lang-ko>문의</span><span lang-en>Get in touch</span></h2>
+      <p class="body muted">
+        <span lang-ko>제휴·제품·채용 문의는 이메일로 연락해 주세요.</span>
+        <span lang-en>For partnerships, products, or careers, please reach us by email.</span>
+      </p>
+      <a class="contact-mail" href="mailto:0421mk@gmail.com">0421mk@gmail.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <span>© <span id="yr"></span> <span lang-ko>(주)비에이엠어소시에이츠</span><span lang-en>BAM Associates Co., Ltd.</span></span>
+    <span><span lang-ko>All rights reserved.</span><span lang-en>All rights reserved.</span></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var html = document.documentElement;
+  var btn = document.getElementById('langBtn');
+  function setLang(l){
+    html.setAttribute('data-lang', l);
+    html.setAttribute('lang', l === 'en' ? 'en' : 'ko');
+    btn.textContent = l === 'en' ? '한국어' : 'EN';
+    try{ localStorage.setItem('bam_lang', l); }catch(e){}
+  }
+  var saved='ko';
+  try{ saved = localStorage.getItem('bam_lang') || 'ko'; }catch(e){}
+  setLang(saved);
+  btn.addEventListener('click', function(){
+    setLang(html.getAttribute('data-lang') === 'en' ? 'ko' : 'en');
+  });
+</script>
+</body>
+</html>
